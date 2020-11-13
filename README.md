@@ -1,1 +1,1 @@
-# productivityhub
+# productivity-hub
