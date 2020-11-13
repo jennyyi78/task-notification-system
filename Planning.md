@@ -4,6 +4,5 @@
 * Microsoft Graph
 * Web App
 * Users can change "personality" types that changes how the hub functions
-* Test
 
 
