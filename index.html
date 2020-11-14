@@ -58,12 +58,12 @@ body {background-color: darkseagreen;}
 
   <div id="TaskButton"></div>
 
-  <mgt-tasks id = ToDo data-source="todo" style="display:block"></mgt-tasks>
+  <mgt-tasks id = ToDo data-source="todo" style="display:none"></mgt-tasks>
   
 
   <script>
     function ShowTasks() {
-      var displaytodo = display.getElementById("ToDo");
+      var displaytodo = document.getElementById("ToDo");
       if (displaytodo.style = "display:none") {
         displaytodo.style = "display:block";
       } else {
