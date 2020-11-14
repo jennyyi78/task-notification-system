@@ -25,7 +25,7 @@
     * Main page contents: 
         * A. To-Do List
             * a. Pulls tasks from Microsoft Tasks
-            * b. Dispalys tasks
+            * b. Displays tasks
             * c. User ranks them by importance
             * d. User chooses personality
             * e. Notification nightmare begins-based on personality selection
