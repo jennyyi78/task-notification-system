@@ -64,10 +64,10 @@ body {background-color: darkseagreen;}
   <script>
     function ShowTasks() {
       var displaytodo = display.getElementById("ToDo");
-      if (displaytodo.style.display === "none") {
-        displaytodo.style.display = "block";
+      if (displaytodo.style === "display:none") {
+        displaytodo.style = "display:block";
       } else {
-        displaytodo.style.display = "none";
+        displaytodo.style = "display:none";
       }
     }
     </script>
