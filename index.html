@@ -35,7 +35,7 @@ body {background-color: darkseagreen;}
     <mgt-msal-provider client-id="f568cc20-4b9c-4581-8c93-fad89fb94fce"></mgt-msal-provider>
     <mgt-login></mgt-login>
 
-    <mgt-tasks data-source="todo" style="display:none"></mgt-tasks>
+    <mgt-tasks id = ToDo data-source="todo" style="display:none"></mgt-tasks>
 
     <mgt-tasks id = "tasks" data-source="todo" style="display:none"></mgt-tasks>
 
@@ -54,21 +54,25 @@ body {background-color: darkseagreen;}
   <script src="Scripts/permissions.js"></script>
   
   <p>To see your tasks, click the "Tasks" button below.</p>
-  <button onclick="ShowTasks">Tasks</button>
-  
+  <button onclick="ShowTasks()">Tasks</button>
+
   <script>
-    function ShowTasks {
-      var displaytodo = document.getElementById("todo");
-      var displaytasks = document.getElementById('tasks');
-      if (displaytodo === "none") {
+    function ShowTasks() {
+      var displaytodo = display.getElementById("ToDo");
+      var displaytasks = display.getElementById("tasks");
+      if (displaytodo.style.display === "none") {
         displaytodo.style.display = "block";
-        } else {
-          displaytodo.style.disply = "none";}
-      if (displaytasks === "none") {
-        displaytasks = "block";
-      } else {displaytasks.style.display = "none"; }
+      } else {
+        displaytodo.style.display = "none";
+      }
+      if (displaytasks.style.display === "none") {
+        displaytasks.style.display = "block";
+      } else {
+        displaytasks.style.display = "none";
+      }
     }
-  </script>
+    </script>
+    
     
   </body>
   
