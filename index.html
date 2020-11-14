@@ -34,10 +34,6 @@ body {background-color: darkseagreen;}
     <mgt-msal-provider client-id="f568cc20-4b9c-4581-8c93-fad89fb94fce"></mgt-msal-provider>
     <mgt-login></mgt-login>
 
-    <mgt-tasks data-source="todo" style="display:none"></mgt-tasks>
-
-    <mgt-tasks id = "tasks" data-source="todo" style="display:none"></mgt-tasks>
-
     <div id="like_button_container"></div>
 
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
@@ -51,6 +47,27 @@ body {background-color: darkseagreen;}
 
   <button onclick = "notifyMe()">Click Me!</button>
   <script src="Scripts/permissions.js"></script>
+  
+  <p>To see your tasks, click the "Tasks" button below.</p>
+  
+  <button onclick= "ShowTasks()">Tasks</button>
+
+  <div id="TaskButton"></div>
+
+  <mgt-tasks id = ToDo data-source="todo" style="display:none"></mgt-tasks>
+  
+
+  <script>
+    function ShowTasks() {
+      var displaytodo = display.getElementById("ToDo");
+      var displaytasks = display.getElementById("tasks");
+      if (displaytodo.style.display === "none") {
+        displaytodo.style.display = "block";
+      } else {
+        displaytodo.style.display = "none";
+      }
+    }
+    </script>
     
     
   </body>
