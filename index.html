@@ -8,16 +8,29 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
+
   <body>
+
     <h2>Welcome to U R Productivity!</h2>
-    <p>Personally control achievement.</p>
+    <p><b>Personally control achievement.</b></p>
+    <p>U R Productivity is a personalized notification system that you
+      can manage on this website. We offer a variety of personalities for
+       the notifications, geared to your motivational needs. 
+       <i>Personally control achievement.</i></p>
+
     <mgt-msal-provider client-id="f568cc20-4b9c-4581-8c93-fad89fb94fce"></mgt-msal-provider>
     <mgt-login></mgt-login>
     <mgt-tasks id = "tasks" data-source="todo"></mgt-tasks>
+
     <div id="like_button_container"></div>
+
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
   <script src="Scripts/like_button.js"></script>
+
+  <p>To begin using U R Productivity, please click the button below
+    to see if your browser supports notifications.</p>
+    
   <button onclick = "notifyMe()">Click Me!</button>
   <script>
     function notifyMe() {
@@ -49,5 +62,6 @@
     
   </body>
   
+
   <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 </html>
