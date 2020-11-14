@@ -54,8 +54,21 @@ body {background-color: darkseagreen;}
   <script src="Scripts/permissions.js"></script>
   
   <p>To see your tasks, click the "Tasks" button below.</p>
-  <button onclick="document.getElementById('todo').style.display='block'
-  document.getElementById('tasks').style.display='block'">Tasks</button>
+  <button onclick="ShowTasks">Tasks</button>
+  
+  <script>
+    function ShowTasks {
+      var displaytodo = document.getElementById("todo");
+      var displaytasks = document.getElementById('tasks');
+      if (displaytodo === "none") {
+        displaytodo.style.display = "block";
+        } else {
+          displaytodo.style.disply = "none";}
+      if (displaytasks === "none") {
+        displaytasks = "block";
+      } else {displaytasks.style.display = "none"; }
+    }
+  </script>
     
   </body>
   
