@@ -18,5 +18,25 @@
 *Color: Greens
 
 *Product
+*Geared towards college students
 *1. Login Screen
 *2. Main Page
+    *Main page contents: 
+        *A. To-Do List
+            *a. User ranks them by importance
+            *b. Finalized To-Do List?
+
+
+
+
+        *A. Calendar
+        *B. Tasks for today/Upcoming tasks/To Do tasks
+        *C. Mail
+        *D. Contacts/People/Network/Recent Contacts
+        *Make sure all of these coordinate with each other*
+
+*Updates? Reminders: Through Mail.
+
+*Extras
+*1. Reminders through desktop notifications/banners
+*2. Dark Mode
