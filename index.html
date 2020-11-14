@@ -54,19 +54,22 @@ body {background-color: darkseagreen;}
   
   <p>To see your tasks, click the "Tasks" button below.</p>
   
-  <button onclick= "ShowTasks()">Tasks</button>
+  <button onclick = "ShowTasks()">Tasks</button>
 
   <div id="TaskButton"></div>
 
   <mgt-tasks id = ToDo data-source="todo" style="display:none"></mgt-tasks>
-  
+ 
 
   <script>
+
     function ShowTasks() {
+      console.log("test3");
       var displaytodo = document.getElementById("ToDo");
       if (displaytodo.style = "display:none") {
-        displaytodo.style = "display:block";
-      }
+        displaytodo.style = "display:block";console.log("test2");}
+      else
+      {displaytodo.style = "display:none";console.log("test1");}
     }
     </script>
     
