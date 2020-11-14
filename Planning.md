@@ -23,20 +23,24 @@
 *2. Main Page
     *Main page contents: 
         *A. To-Do List
-            *a. User ranks them by importance
-            *b. Finalized To-Do List?
-
-
-
-
-        *A. Calendar
-        *B. Tasks for today/Upcoming tasks/To Do tasks
-        *C. Mail
-        *D. Contacts/People/Network/Recent Contacts
-        *Make sure all of these coordinate with each other*
+            *a. Pulls tasks from calendar
+            *b. Dispalys tasks
+            *c. User ranks them by importance
+            *d. User chooses personality
+            *e. Notification nightmare begins-based on personality selection
+*3. Notification Nightmare
+    *A. Banners
+    *B. Sound Notification
+        *a. Tough-love
+            *I. Pull names from contacts to compare user to
+        *b. Flowery nurturer
+            *I. Pull names from contacts 
+        *c. Distant deadpan secretary
 
 *Updates? Reminders: Through Mail.
 
 *Extras
 *1. Reminders through desktop notifications/banners
 *2. Dark Mode
+*3. Pull tasks from mail
+*4. Sorting tasks by type-notifications will have specific language geared toward category
