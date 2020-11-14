@@ -7,19 +7,58 @@
     <title>U R Productivity 2020 Hackathon</title> 
     <link rel="stylesheet" href="style.css">
   </head>
+<<<<<<< HEAD
   <body style="background-color:darkseagreen;"> 
     <h1 style= "color:FloralWhite";>Welcome to U R Productivity! Personally control achievement.</h1>
+=======
+>>>>>>> 3a7150dead7f9089b65f15eadb247c7d2542a349
 
   <body>
     <h2>Welcome to U R Productivity!</h2>
     <p>Personally control achievement.</p>
     <mgt-msal-provider client-id="f568cc20-4b9c-4581-8c93-fad89fb94fce"></mgt-msal-provider>
     <mgt-login></mgt-login>
+<<<<<<< HEAD
     <mgt-tasks data-source="todo"></mgt-tasks>
+=======
+    <mgt-tasks id = "tasks" data-source="todo"></mgt-tasks>
+>>>>>>> 3a7150dead7f9089b65f15eadb247c7d2542a349
     <div id="like_button_container"></div>
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
   <script src="Scripts/like_button.js"></script>
+<<<<<<< HEAD
+=======
+  <button onclick = "notifyMe()">Click Me!</button>
+  <script>
+    function notifyMe() {
+  // Let's check if the browser supports notifications
+  if (!("Notification" in window)) {
+    alert("This browser does not support desktop notification");
+  }
+
+  // Let's check whether notification permissions have already been granted
+  else if (Notification.permission === "granted") {
+    // If it's okay let's create a notification
+    var notification = new Notification("Hi there!");
+  }
+
+  // Otherwise, we need to ask the user for permission
+  else if (Notification.permission !== "denied") {
+    Notification.requestPermission().then(function (permission) {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        var notification = new Notification("Hi there!");
+      }
+    });
+  }
+
+  // At last, if the user has denied notifications, and you 
+  // want to be respectful there is no need to bother them any more.
+}
+    </script>
+    
+>>>>>>> 3a7150dead7f9089b65f15eadb247c7d2542a349
   </body>
   
   <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>

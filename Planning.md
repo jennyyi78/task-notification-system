@@ -24,7 +24,7 @@
 * 2. Main Page
     * Main page contents: 
         * A. To-Do List
-            * a. Pulls tasks from calendar
+            * a. Pulls tasks from Microsoft Tasks
             * b. Dispalys tasks
             * c. User ranks them by importance
             * d. User chooses personality
@@ -45,3 +45,4 @@
 * 1. Reminders through desktop notifications/banners
 * 3. Pull tasks from mail
 * 4. Sorting tasks by type-notifications will have specific language geared toward category
+* 5. Sync tasks with Microsoft calendar
