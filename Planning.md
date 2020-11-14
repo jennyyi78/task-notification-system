@@ -46,3 +46,4 @@
 * 3. Pull tasks from mail
 * 4. Sorting tasks by type-notifications will have specific language geared toward category
 * 5. Sync tasks with Microsoft calendar
+* 6. When sign-in is clicked or when button is clicked, the logo changes (flaps its wings or smthing)
