@@ -11,12 +11,15 @@
     <style>
 body {background-color: darkseagreen;}
 
-  h1 {color: Floralwhite;}
+  h1 {color: #fffaf0;}
   h1 {text-align:center;}
-  h1 {font-family:courier;}
-  h1{font-size: large;}
+  h1 {font-family:'Courier New', Courier, monospace;}
+  h1 {border: 200px olive;}
+  h1 {font-size: 400px;}
+
+
   h2 {text-align:center;}
-  h2 {font-family:'courier';}
+  h2 {font-family:'Courier New', Courier, monospace}
   h2 {font: size 200;}
 </style> </head>
 <body>
@@ -51,22 +54,21 @@ body {background-color: darkseagreen;}
   
   <p>To see your tasks, click the "Tasks" button below.</p>
   
-  <button onclick = "ShowTasks()">Tasks</button>
+  <button onclick= "ShowTasks()">Tasks</button>
 
   <div id="TaskButton"></div>
 
   <mgt-tasks id = ToDo data-source="todo" style="display:none"></mgt-tasks>
- 
+  
 
   <script>
-
     function ShowTasks() {
-      console.log("test3");
-      var displaytodo = document.getElementById("ToDo");
-      if (displaytodo.style = "display:none") {
-        displaytodo.style = "display:block";console.log("test2");}
-      else
-      {displaytodo.style = "display:none";console.log("test1");}
+      var displaytodo = display.getElementById("ToDo");
+      if (displaytodo.style.display === "none") {
+        displaytodo.style.display = "block";
+      } else {
+        displaytodo.style.display = "none";
+      }
     }
     </script>
     
