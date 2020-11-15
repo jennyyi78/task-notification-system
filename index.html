@@ -8,6 +8,7 @@
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
   <script src="Scripts/like_button.js"></script>
   <script src = "Scripts/taskCheckbox.js"></script> 
+  <script src = "Scripts/dropDownButton.js"></script>
   <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
   
   <head>
@@ -66,7 +67,17 @@
     </p>   
 
     <button onclick = "notifyMe()">Click Me!</button>
-      
+    
+    <div class="dropdown">
+      <button onclick="dropDownButton()" class="dropbtn">Choose Personality</button>
+      <div id="myDropdown" class="dropdown-content">
+        <p id="John">John</p>
+        <p id="Silas">Silas</p>
+        <p id="Rock">Rock</p>
+        <p id="Cecilia">Cecilia</p>    
+      </div>
+    </div>
+
     <aside>To toggle your tasks on and off, click the checkbox below.</aside>
       
     <div id="TaskButton"></div>
