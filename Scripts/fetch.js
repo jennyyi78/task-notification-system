@@ -44,6 +44,7 @@ function createNotification(title) {
     var notification = new Notification(title);
 }
 
+
 const getData = () => {
     sendHttpRequest('GET', 'https://graph.microsoft.com/v1.0/me/todo/lists')
     .then(responseData => {
@@ -56,12 +57,12 @@ const getData = () => {
         console.log(responseData);
         var i;
         for (i = 0; i < responseData.value.length; i++){
-        if (responseData.value[i].hasOwnProperty('dueDateTime')) {
-            dueDateTime = responseData.value[i].dueDateTime.dateTime;
-            title = responseData.value[i].title;
-            taskDates.push(dueDateTime);
-            taskTitles.push(title);
-        }
+            if (responseData.value[i].hasOwnProperty('dueDateTime')) {
+                dueDateTime = responseData.value[i].dueDateTime.dateTime;
+                title = responseData.value[i].title;
+                taskDates.push(dueDateTime);
+                taskTitles.push(title);
+            }
     }
     sendNotifications(taskDates, taskTitles);
     });
