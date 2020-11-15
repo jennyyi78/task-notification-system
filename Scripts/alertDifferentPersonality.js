@@ -1,5 +1,17 @@
+var personality = 'John';
+
+function changePersonality(name){
+    personality = name;
+    alert("personality is now " + name);
+}
+
+function getPersonality(){
+    return personality;
+}
+
 function getTaskMessage(taskName){
-    var tough_love = ["Hey, you have #TASK to complete. You have the smell of failure all over you; get rid of it!",
+    var toughMsgs = [ // Rock
+    "Hey, you have #TASK to complete. You have the smell of failure all over you; get rid of it!",
     "If you don’t smarten up and get #TASK done, you’d be about as sharp as the edge of a marble.",
     "Get #TASK done. Not getting to work will make me believe in reincarnations. No one can be this stupid in one lifetime.",
     "Hear that? That’s the sound of how productive you’re being. Go get #TASK done!",
@@ -30,8 +42,44 @@ function getTaskMessage(taskName){
     "What? Is #TASK hard? Is it a little difficult? Well suck it up and DO IT!"
     ];
 
-    // return number from 0-last index of tough_love
-    var randomIndex = Math.floor(Math.random() * tough_love.length)     
+    var posMsgs = [ // Cecilia
+        "You can also stand with the great! Take that first step by getting #TASK done!",
+        "Don’t forget to devote time into loving yourself. Also, don’t forget to devote time into #TASK",
+        "14.	Love needs a target to bloom. Your target is #TASK. Let your work bloom. "
+    ];
 
-    return tough_love[randomIndex].replace("#TASK", taskName);
+    var basicMsgs = [ // John
+        "Reminder: you have yet to do #TASK",
+        "Reminder: #TASK",
+        "You have yet to finish #TASK"
+    ]
+
+    var scaryMsgs = [ // Silas
+        "You didn’t do #TASK yet? I must break you.",
+        "#TASK should be going swimmingly, right? Else you’d be swimming with the fishes",
+        "Why haven’t you done #TASK? This isn’t the first time I’ve had to cover up the murder of a lazy client."
+    ]
+
+    var personality = getPersonality();
+    var randomIndex;
+    var personalizedMsg;
+    switch(personality){
+        case 'Silas':            
+            randomIndex = Math.floor(Math.random() * scaryMsgs.length); 
+            personalizedMsg = scaryMsgs[randomIndex].replace("#TASK", taskName);
+        break;
+        case 'Rock':
+            randomIndex = Math.floor(Math.random() * toughMsgs.length);
+            personalizedMsg = toughMsgs[randomIndex].replace("#TASK", taskName);
+        break;
+        case 'Cecilia':
+            randomIndex = Math.floor(Math.random() * posMsgs.length);
+            personalizedMsg = posMsgs[randomIndex].replace("#TASK", taskName);
+        break;
+        default: // John            
+            randomIndex = Math.floor(Math.random() * basicMsgs.length);
+            personalizedMsg = basicMsgs[randomIndex].replace("#TASK", taskName);       
+    }   
+       
+    return personalizedMsg;
 }
