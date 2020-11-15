@@ -11,10 +11,10 @@ function changePersonality(name){
             rocksSound();
         break;
         case 'Cecilia':
-        
+            ceciliaSound();
         break;
         default: // John            
-           
+           johnSound();
     }  
 }
 
