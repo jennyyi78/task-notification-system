@@ -1,10 +1,10 @@
 body {
 
     background-color: rgb(255, 236, 202);}
-    .container{
-        height: 100vh;
+    .contain{
+        height: 200vh;
         width: 100%;
-        background-image:url(pics/pexels-.jpeg);
+        background-image:url(pics/plz.jpg);
         background-position: center;
         background-size: cover;
         padding-left: 5%;
