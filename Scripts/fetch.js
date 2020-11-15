@@ -82,7 +82,6 @@ function myTimer() {
   document.getElementById("timer").innerHTML = d.toLocaleTimeString();
 }
 
-
 const THIRTY_MINUTES = 30 * 60000; // 60000 ms in a minute
 window.setTimeout(getData, 1000) // tales one sec for it to first execute
 window.setInterval(getData, THIRTY_MINUTES); // executes every 
