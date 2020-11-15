@@ -1,21 +1,22 @@
 
-    .contain{
-        height: 200vh;
-        width: 150%;
-        background-image:url(pics/plz.icloud.jpg);
-        background-position: center;
-        background-size: cover;
-        padding-left: 5%;
-        padding-right:5%;
-        box-sizing: border-box;
-        position: absolute;
+.contain{
+    height: 200vh;
+    width: 150%;
+    background-image:url(pics/plz.icloud.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right:5%;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: -1;
         
  }
 
 #clock {display:inline-block;
   margin-right:10px;
   width:200px;
-  
+ 
 }
 #login {
   display:inline-block;
