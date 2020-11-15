@@ -1,2 +1,2 @@
-# productivity-hub
+# task-notification-system
 A whole new way to control your productivity, U R Productivity focuses on what will motivate YOU to get work done. U R Productivity is a web application that utilizes Microsoft Graph, using its APIs to ultimately create a productivity hub geared towards motivation and reminders. This focus on motivation is reflected in the personalities of the reminders you receive, which can be adjusted in settings. We understand that everyone has different requirements to get themselves to focus, whether they require an encouraging voice or a healthy does of fear and urgency. That's why, we are proud to introduce U R Productivity: personalized reminders to personally control achievement.
