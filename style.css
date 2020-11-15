@@ -1,4 +1,5 @@
 
+    b 
   
     .contain{
         height: 200vh;
@@ -9,8 +10,9 @@
         padding-left: 5%;
         padding-right:5%;
         box-sizing: border-box;
-        position: absolute; 
-
+        position: absolute;
+        
+ }
 
 #clock {display:inline-block;
   margin-right:10px;
