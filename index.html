@@ -83,7 +83,7 @@
    style="color:white";style="text-size:30px";><i><b>To begin, please click the button below<br>
         to see if your browser supports notifications.</i></b>
    </div>  
-
+   <div>
     <div class="dropdown">
       <button onclick="dropDownButton()" class="dropbtn">Choose Personality</button>
       <div id="myDropdown" class="dropdown-content">
@@ -95,8 +95,13 @@
    <button onclick="notifyMe();playSound('sounds/microsoftXPstartup.wav');" class="notbtn">Click Me!</button>
     
     <p style="color:white";><b> To toggle your tasks on and off, click the checkbox below.</b></p>    
-   
     Show Tasks (On/Off): <input type ="checkbox" id = "myCheck" onclick="ShowTasks()">
+  </div>
+  <div>
+    <div style="line-height:400%;">
+      <br>
+  </div>
     <mgt-tasks id = ToDo data-source="todo"></mgt-tasks>     
+  </div>
   </body>  
 </html>
