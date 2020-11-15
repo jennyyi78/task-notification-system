@@ -22,8 +22,16 @@
     <style>     
       h1 {color: hsl(40, 100, 97);}
       h1 {text-align:center;}
-    
+      html,body{
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+    }
     </style> 
+
+
+}
   </head>
 
   <body>
@@ -74,8 +82,6 @@
     <mgt-msal-provider client-id="f568cc20-4b9c-4581-8c93-fad89fb94fce"></mgt-msal-provider>
     
     <div id="login"><mgt-login></mgt-login></div>     
-
-    <div id="like_button_container"></div>
      
     <!--called every 30 minutes -->
     <div id = "get-btn"></div>  
