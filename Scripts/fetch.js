@@ -76,6 +76,7 @@ const getData = () => {
     
 };
 
+// I just wanted to add a clock feature because that's so cool
 var myVar = setInterval(myTimer, 1000);
 
 function myTimer() {
@@ -85,6 +86,6 @@ function myTimer() {
 
 
 const THIRTY_MINUTES = 30 * 60000; // 60000 ms in a minute
-getData
+window.setTimeout(getData, 1000) // tales one sec for it to first execute
 window.setInterval(getData, THIRTY_MINUTES);
 //getBtn.addEventListener('click', getData);
