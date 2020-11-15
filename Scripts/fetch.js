@@ -1,11 +1,8 @@
-
-//const getBtn = document.getElementById('get-btn');
 var id;
 var dueDateTime;
 var title;
 const taskDates = [];
 const taskTitles = [];
-
 const sendHttpRequest = (method, url, data) => {
 
     return fetch(url, {
@@ -49,7 +46,6 @@ function createNotification(title) {
 
 
 const getData = () => {
-
     sendHttpRequest('GET', 'https://graph.microsoft.com/v1.0/me/todo/lists')
     .then(responseData => {
         //console.log(responseData);
@@ -75,6 +71,7 @@ const getData = () => {
     sendNotifications(taskDates, taskTitles);
     });
     });
+    
 };
 
 // I just wanted to add a clock feature because that's so cool
@@ -89,4 +86,3 @@ function myTimer() {
 const THIRTY_MINUTES = 30 * 60000; // 60000 ms in a minute
 window.setTimeout(getData, 1000) // tales one sec for it to first execute
 window.setInterval(getData, THIRTY_MINUTES); // executes every 
-//getBtn.addEventListener('click', getData);
