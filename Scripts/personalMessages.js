@@ -3,19 +3,6 @@ var personality = 'John';
 function changePersonality(name){
     personality = name;
     //alert("Personality is now " + name);
-    switch(personality){
-        case 'Silas':            
-           silasSound();
-        break;
-        case 'Rock':
-            rocksSound();
-        break;
-        case 'Cecilia':
-            ceciliaSound();
-        break;
-        default: // John            
-           johnSound();
-    }  
 }
 
 function getPersonality(){
