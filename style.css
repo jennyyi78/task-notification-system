@@ -1,4 +1,15 @@
 body {
+
     background-color: rgb(255, 236, 202);}
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-image:url(pics/pexels-.jpeg);
+        background-position: center;
+        background-size: cover;
+        padding-left: 5%;
+        padding-right:5%;
+        box-sizing: border-box;
+        position: relative;
 
-
+    }
