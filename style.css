@@ -1,6 +1,4 @@
-body {
 
-    background-color: rgb(255, 236, 202);} -->
   
     .contain{
         height: 200vh;
@@ -13,7 +11,6 @@ body {
         box-sizing: border-box;
         position: absolute; 
 
-} 
 
 #clock {display:inline-block;
   margin-right:10px;
