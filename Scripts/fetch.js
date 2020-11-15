@@ -87,5 +87,5 @@ function myTimer() {
 
 const THIRTY_MINUTES = 30 * 60000; // 60000 ms in a minute
 window.setTimeout(getData, 1000) // tales one sec for it to first execute
-window.setInterval(getData, THIRTY_MINUTES);
+window.setInterval(getData, THIRTY_MINUTES); // executes every 
 //getBtn.addEventListener('click', getData);
