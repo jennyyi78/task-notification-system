@@ -59,9 +59,27 @@ function getTaskMessage(taskName){
         "Why haven’t you done #TASK? This isn’t the first time I’ve had to cover up the murder of a lazy client."
     ]
 
-
-    // return number from 0-last index of tough_love
-    var randomIndex = Math.floor(Math.random() * tough_love.length)     
-
-    return tough_love[randomIndex].replace("#TASK", taskName);
+    var personality = getPersonality();
+    var length;
+    var randomIndex;
+    var personalizedMsg;
+    switch(personality){
+        case 'Silas':            
+            randomIndex = Math.floor(Math.random() * scaryMsgs.length); 
+            personalizedMsg = scaryMsgs[randomIndex].replace("#TASK", taskName);
+        break;
+        case 'Rock':
+            randomIndex = Math.floor(Math.random() * toughMsgs.length);
+            personalizedMsg = toughMsgs[randomIndex].replace("#TASK", taskName);
+        break;
+        case 'Cecilia':
+            randomIndex = Math.floor(Math.random() * posMsgs.length);
+            personalizedMsg = posMsgs[randomIndex].replace("#TASK", taskName);
+        break;
+        default: // John            
+            randomIndex = Math.floor(Math.random() * basicMsgs.length);
+            personalizedMsg = basicMsgs[randomIndex].replace("#TASK", taskName);       
+    }   
+       
+    return personalizedMsg;
 }
