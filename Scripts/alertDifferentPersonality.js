@@ -61,7 +61,6 @@ function getTaskMessage(taskName){
     ]
 
     var personality = getPersonality();
-    var length;
     var randomIndex;
     var personalizedMsg;
     switch(personality){
