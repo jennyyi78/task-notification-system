@@ -33,5 +33,5 @@ function getTaskMessage(taskName){
     // return number from 0-last index of tough_love
     var randomIndex = Math.floor(Math.random() * tough_love.length)     
 
-    return  tough_love[randomIndex].replace("#TASK", taskName);
+    return tough_love[randomIndex].replace("#TASK", taskName);
 }

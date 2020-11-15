@@ -43,6 +43,8 @@ function checkDate(date) {
 
 function createNotification(title) {
     var notification = new Notification(getTaskMessage(title));
+    // Grace added an alert - you may want to comment it out
+    alert(getTaskMessage(title));
 }
 
 
