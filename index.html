@@ -22,8 +22,20 @@
     <style>     
       h1 {color: hsl(40, 100, 97);}
       h1 {text-align:center;}
-    
+<<<<<<< HEAD
+ 
+=======
+      html,body{
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+    }
+>>>>>>> d4492a7dd82e6fee400a7154afc9adaa278935e6
     </style> 
+
+
+}
   </head>
 
   <body>
@@ -55,9 +67,10 @@
       left:650px;
       font-size:110%;
     }
-  
- 
+
+
 </style>
+<div class="mid"></div>
 <div class="top-left"><b> U R Productivity is a personalized notification system <br> that you
     can manage on this website. 
     <br>We offer a variety of personalities for
@@ -74,8 +87,6 @@
     <mgt-msal-provider client-id="f568cc20-4b9c-4581-8c93-fad89fb94fce"></mgt-msal-provider>
     
     <div id="login"><mgt-login></mgt-login></div>     
-
-    <div id="like_button_container"></div>
      
     <!--called every 30 minutes -->
     <div id = "get-btn"></div>  
@@ -83,7 +94,7 @@
    style="color:white";style="text-size:30px";><i><b>To begin, please click the button below<br>
         to see if your browser supports notifications.</i></b>
    </div>  
-
+   <div>
     <div class="dropdown">
       <button onclick="dropDownButton()" class="dropbtn">Choose Personality</button>
       <div id="myDropdown" class="dropdown-content">
@@ -95,8 +106,13 @@
    <button onclick="notifyMe();playSound('sounds/microsoftXPstartup.wav');" class="notbtn">Click Me!</button>
     
     <p style="color:white";><b> To toggle your tasks on and off, click the checkbox below.</b></p>    
-   
-    Show Tasks (On/Off): <input type ="checkbox" id = "myCheck" onclick="ShowTasks()" checked = "yes">
+    <h4 style="color:white">Show Tasks (On/Off): <input type ="checkbox" id = "myCheck" onclick="ShowTasks()"></h1> 
+  </div>
+  <div>
+    <div style="line-height:400%;">
+      <br>
+  </div>
     <mgt-tasks id = ToDo data-source="todo"></mgt-tasks>     
+  </div>
   </body>  
 </html>
