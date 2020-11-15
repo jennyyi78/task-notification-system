@@ -1,61 +1,75 @@
 <!DOCTYPE html>
 <html lang= "en">
-
+  <link rel="stylesheet" href="style.css">
+  <script src="Scripts/fetch.js" defer></script>
+  <script src="Scripts/personalMessages.js"></script>
+  <script src="Scripts/permissions.js"></script>
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="Scripts/like_button.js"></script>
+  <script src = "Scripts/taskCheckbox.js"></script> 
+  <script src = "Scripts/dropDownButton.js"></script>
+  <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+  
   <head>
     <meta charset = "UTF-8">
     <meta name ="viewport" content= "width=device-width", initial-sclae="1.0">
-    <title>U R Productivity 2020 Hackathon</title> 
-    <link rel="stylesheet" href="style.css">
-    <script src="Scripts/fetch.js" defer></script>
-    <script src="Scripts/alertDifferentPersonality.js"></script>
-
+    <title>U R Productivity 2020 Hackathon</title>    
+    
     <!-- Sign In Page Appreance -->
     <style>
-body {background-color: rgb(255, 236, 202);}
+      
 
-  h1 {color: hsl(40, 100, 97);}
-  h1 {text-align:center;}
-  h1 {border: 30px solid rgba(224, 146, 109 );}
-</style> 
-</head>
+      h1 {color: hsl(40, 100, 97);}
+      h1 {text-align:center;}
+      
+    </style> 
+  </head>
 
+  <!--<body>
+    <div class="contain">
 
-<body>
+    </div> 
+   <style>
+      p{border: 50px solid rgb(231, 188, 124);}
+      p {color: floralwhite;}
+      
+  p {background-color:rgb(231, 188, 124);}
+      h1 {margin:.5px;
+          padding:.5px;}
+      nav{border: 30px solid lightyellow}
+      aside{border: 40px solid rgb(231, 188, 124)}
+      aside{background-color: rgb(231,188,124)}
+    </style> -->
 <style>
-p{border: 50px solid rgb(231, 188, 124);}
-p {color: floralwhite;}
-p {background-color:rgb(231, 188, 124);}
-h1 {margin:.5px;
-    padding:.5px;}
-nav{border: 30px solid lightyellow}
-aside{border: 40px solid rgb(231, 188, 124)}
-aside{background-color: rgb(231,188,124)}
+  .top-left{
+    position: relative;
+    top:270px;
+    left:20px
+  }
 </style>
+<div class="top-left"> <bold>  U R Productivity is a personalized notification system that you
+    can manage on this website. 
+    <br>We offer a variety of personalities for
+      the notifications, geared to your motivational needs. <br>
+      <i>Personally control achievement.</i></bold></div>
 
-<div id= "Title" style= background-color:rgb(224,146,109);>
-
-<h1 id= "Header1" style= "color:floralwhite; font: bold 40px Courier New, serif;">
-  <b> Welcome to U R Productivity</b></h1>
-<h1 id= "Header2" style= "color: floralwhite; font: bold 10px"><i>Personally Control Achievement</i></h2>
-
-</div>
-
-    <p> U R Productivity is a personalized notification system that you
-      can manage on this website. We offer a variety of personalities for
-       the notifications, geared to your motivational needs. 
-       <i>Personally control achievement.</i></p>
-
+    
+      <h1 id= "Header1" style= "color:floralwhite; font: bold 40px Courier New, serif;">
+        <b> Welcome to U R Productivity</b></h1>
+      <h1 id= "Header2" style= "color: floralwhite; font: bold 10px"><i>Personally Control Achievement</i></h2>
+    
+    <div id="clock"><p2 id="timer"></p2></div>
+    
     <mgt-msal-provider client-id="f568cc20-4b9c-4581-8c93-fad89fb94fce"></mgt-msal-provider>
-    <mgt-login></mgt-login>
+    
+    <div id= "login"><mgt-login></mgt-login></div>     
 
     <div id="like_button_container"></div>
-
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-  <script src="Scripts/like_button.js"></script>
-  <button id="get-btn">GET Data</button>
-
-<section>
+     
+    <!--called every 30 minutes -->
+    <div id = "get-btn"></div>
+    
  
   <p>To begin using U R Productivity, please click the button below
     to see if your browser supports notifications.</p>   
@@ -71,19 +85,28 @@ aside{background-color: rgb(231,188,124)}
 
   <script src = "Scripts/taskCheckbox.js"></script>  
    </section> 
-
-  <!-- <script>
-  window.setInterval(function(){
-    var date = new Date(); 
-    console.log(date.getMinutes());
-    if(date.getMinutes()/2 === 0){
-        console.log("hi"); 
-    }
-}, 60000);
-</script> -->
-    
-  </body>
   
 
   <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+    
+    <p style="color:white";><i>To begin using U R Productivity, please click the button below
+        to see if your browser supports notifications.</i>
+    </p>   
+
+    <div class="dropdown">
+      <button onclick="dropDownButton()" class="dropbtn">Choose Personality</button>
+      <div id="myDropdown" class="dropdown-content">
+        <button onclick="changePersonality('John')">John</button>
+        <button onclick="changePersonality('Silas')">Silas</button>
+        <button onclick="changePersonality('Rock')">Rock</button>
+        <button onclick="changePersonality('Cecilia')">Cecilia</button>   
+      </div>
+    </div>
+    <button onclick = "notifyMe()">Click Me!</button>
+    <button onclick= display.white;>
+      <button onclick= position:center; 
+    
+    <p style="color:white";>To toggle your tasks on and off, click the checkbox below.</p>
+    
+  </body>  
 </html>
