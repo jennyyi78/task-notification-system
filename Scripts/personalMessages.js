@@ -45,7 +45,7 @@ function getTaskMessage(taskName){
     var posMsgs = [ // Cecilia
         "You can also stand with the great! Take that first step by getting #TASK done!",
         "Don’t forget to devote time into loving yourself. Also, don’t forget to devote time into #TASK",
-        "14.	Love needs a target to bloom. Your target is #TASK. Let your work bloom. "
+        "Love needs a target to bloom. Your target is #TASK. Let your work bloom. "
     ];
 
     var basicMsgs = [ // John

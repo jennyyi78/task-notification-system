@@ -63,15 +63,8 @@
     
     <mgt-msal-provider client-id="f568cc20-4b9c-4581-8c93-fad89fb94fce"></mgt-msal-provider>
     
-    <div id= "login"><mgt-login></mgt-login></div>     
-
-    <div id="like_button_container"></div>
-     
-    <!--called every 30 minutes -->
-    <div id = "get-btn"></div>
-    
- 
-    
+    <div id= "login"><mgt-login></mgt-login></div>   
+       
     <p style="color:white";><i>To begin using U R Productivity, please click the button below
         to see if your browser supports notifications.</i>
     </p>   
@@ -85,15 +78,14 @@
         <button onclick="changePersonality('Cecilia')">Cecilia</button>   
       </div>
     </div>
+    
     <button onclick = "notifyMe()">Click Me!</button>
     <button onclick= display.white;>
       <button onclick= position:center; 
     
-    <p style="color:white";>To toggle your tasks on and off, click the checkbox below.</p>
-      
-   
-      
+    <p style="color:white">To toggle your tasks on and off, click the checkbox below.</p>
+          
     Show Tasks (On/Off): <input type ="checkbox" id = "myCheck" onclick="ShowTasks()">
-    <mgt-tasks id = ToDo data-source="todo"></mgt-tasks>     
+    <mgt-tasks id = 'ToDo' data-source="todo"></mgt-tasks>     
   </body>  
 </html>
