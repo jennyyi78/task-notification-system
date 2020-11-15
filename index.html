@@ -11,9 +11,13 @@
 
     <!-- Sign In Page Appreance -->
     <style>
-body {background-color: rgb(238, 224, 215);}
+<<<<<<< HEAD
+body {background-color: rgb(255, 236, 202);}
 
   h1 {color: hsl(40, 100, 97);}
+=======
+body {background-color: rgb(238, 224, 215);}
+>>>>>>> d86868e7608290dd0839823b5d98369cb82593d0
   h1 {text-align:center;}
   h1 {border: 30px solid rgba(224, 146, 109 );}
 </style> 
@@ -22,11 +26,14 @@ body {background-color: rgb(238, 224, 215);}
 
 <body>
 <style>
-p{border: 100px solid rgb(70, 158, 70);}
+p{border: 50px solid rgb(231, 188, 124);}
 p {color: floralwhite;}
-p {background-color:rgb(70, 153, 70);}
+p {background-color:rgb(231, 188, 124);}
 h1 {margin:.5px;
     padding:.5px;}
+nav{border: 30px solid lightyellow}
+aside{border: 40px solid rgb(231, 188, 124)}
+aside{background-color: rgb(231,188,124)}
 </style>
 
 <div id= "Title" style= background-color:rgb(224,146,109);>
@@ -52,7 +59,7 @@ h1 {margin:.5px;
   <script src="Scripts/like_button.js"></script>
   <button id="get-btn">GET Data</button>
 
-
+<section>
  
   <p>To begin using U R Productivity, please click the button below
     to see if your browser supports notifications.</p>   
@@ -60,13 +67,16 @@ h1 {margin:.5px;
   <button onclick = "notifyMe()">Click Me!</button>
   <script src="Scripts/permissions.js"></script>
   
-  <p>To toggle your tasks on and off, click the checkbox below.</p>
+  <aside>To toggle your tasks on and off, click the checkbox below.</aside>
   
   <div id="TaskButton"></div>
   Show Tasks (On/Off): <input type ="checkbox" id = "myCheck" onclick="ShowTasks()">
   <mgt-tasks id = ToDo data-source="todo"></mgt-tasks> 
 
   <script src = "Scripts/taskCheckbox.js"></script>  
+<<<<<<< HEAD
+   </section> 
+=======
 
   <!-- <script>
   window.setInterval(function(){
@@ -78,6 +88,7 @@ h1 {margin:.5px;
 }, 60000);
 </script> -->
     
+>>>>>>> d86868e7608290dd0839823b5d98369cb82593d0
   </body>
   
 
