@@ -1,14 +1,14 @@
 
-    b
+    b 
   
     .contain{
-        height: 50%;
-        width: 10%;
+        height: 200vh;
+        width: 100%;
         background-image:url(pics/plz.jpg);
         background-position: center;
         background-size: cover;
-        padding-left: 10%;
-        padding-right:10%;
+        padding-left: 5%;
+        padding-right:5%;
         box-sizing: border-box;
         position: absolute;
         
@@ -27,7 +27,7 @@
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #1137b6;
+    background-color: #3498DB;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -39,7 +39,7 @@
 }
   /* Dropdown button on hover & focus */
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #1137b6;
+    background-color: #2980B9;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -54,7 +54,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f7f4f4;
+    background-color: #f1f1f1;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -63,14 +63,27 @@
   
   /* Links inside the dropdown */
   .dropdown-content button {
-    color: rgb(179, 45, 45);
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown button:hover {background-color: rgb(245, 235, 235);}
+  .dropdown button:hover {background-color: #ddd;}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display: block;}
+
+  .notbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    top: 200px;
+    left:60px;
+
+    cursor: pointer;
+  }
+  
