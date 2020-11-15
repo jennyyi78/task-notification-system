@@ -34,14 +34,14 @@ function checkDate(date) {
     var month = taskDate.getMonth();
     var day = taskDate.getDate();
     
-    return (todayYear === year && todayMonth === month && taskDate - today >= 5 )
+    return (todayYear === year && todayMonth === month && taskDate - today > 0 )
     
 }
 
 function createNotification(title) {
     var notification = new Notification(getTaskMessage(title));
     // Grace added an alert - you may want to comment it out
-    alert(getTaskMessage(title));
+    // alert(getTaskMessage(title));
 }
 
 
