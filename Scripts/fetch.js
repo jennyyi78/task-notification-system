@@ -76,6 +76,15 @@ const getData = () => {
     
 };
 
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+}
 
 
+const THIRTY_MINUTES = 30 * 60000; // 60000 ms in a minute
+getData
+window.setInterval(getData, THIRTY_MINUTES);
 //getBtn.addEventListener('click', getData);

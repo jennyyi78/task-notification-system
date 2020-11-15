@@ -11,13 +11,13 @@
 
     <!-- Sign In Page Appreance -->
     <style>
-body {background-color: rgb(255, 236, 202);}
+      body {background-color: rgb(255, 236, 202);}
 
-  h1 {color: hsl(40, 100, 97);}
-  h1 {text-align:center;}
-  h1 {border: 30px solid rgba(224, 146, 109 );}
-</style> 
-</head>
+      h1 {color: hsl(40, 100, 97);}
+      h1 {text-align:center;}
+      h1 {border: 30px solid rgba(224, 146, 109 );}
+    </style> 
+  </head>
 
 
 <body>
@@ -53,7 +53,10 @@ aside{background-color: rgb(231,188,124)}
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
   <script src="Scripts/like_button.js"></script>
-  <button id="get-btn">GET Data</button>
+  
+  <!--TODO get rid of button so that it's called every 30 minutes -->
+  <div id = "get-btn"></div>
+  <!-- <button id="get-btn">GET Data</button> -->
 
 <section>
  
