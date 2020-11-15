@@ -6,6 +6,7 @@
   <script src="Scripts/permissions.js"></script>
   <script src = "Scripts/taskCheckbox.js"></script> 
   <script src = "Scripts/dropDownButton.js"></script>
+  <script src = "Scripts/playSound.js"></script>
   <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
   
   <head>
@@ -51,7 +52,7 @@
       the notifications, geared to your motivational needs. <br>
       <i>Personally control achievement.</i></bold>
 </div>
-
+      <script>loginSound();</script>
     
       <h1 id= "Header1" style= "color:floralwhite; font: bold 40px Courier New, serif;">
         <b> Welcome to U R Productivity</b></h1>
@@ -61,7 +62,7 @@
     
     <mgt-msal-provider client-id="f568cc20-4b9c-4581-8c93-fad89fb94fce"></mgt-msal-provider>
     
-    <div id= "login"><mgt-login></mgt-login></div>     
+    <div id="login"><mgt-login></mgt-login></div>     
 
     <div id="like_button_container"></div>
      
