@@ -6,6 +6,7 @@
     <meta name ="viewport" content= "width=device-width", initial-sclae="1.0">
     <title>U R Productivity 2020 Hackathon</title> 
     <link rel="stylesheet" href="style.css">
+    
     <script src="Scripts/fetch.js" defer></script>
     <script src="Scripts/alertDifferentPersonality.js"></script>
 
@@ -20,33 +21,31 @@
   </head>
 
 
-<body>
-  <div class="contain">
+  <body>
+    <div class="contain">
 
-  </div>
-<style>
-p{border: 50px solid rgb(231, 188, 124);}
-p {color: floralwhite;}
-p {background-color:rgb(231, 188, 124);}
-h1 {margin:.5px;
-    padding:.5px;}
-nav{border: 30px solid lightyellow}
-aside{border: 40px solid rgb(231, 188, 124)}
-aside{background-color: rgb(231,188,124)}
-</style>
+    </div>
+    <style>
+      p{border: 50px solid rgb(231, 188, 124);}
+      p {color: floralwhite;}
+      p {background-color:rgb(231, 188, 124);}
+      h1 {margin:.5px;
+          padding:.5px;}
+      nav{border: 30px solid lightyellow}
+      aside{border: 40px solid rgb(231, 188, 124)}
+      aside{background-color: rgb(231,188,124)}
+    </style>
 
-<div id= "Title" style= background-color:rgb(224,146,109);>
-
-<h1 id= "Header1" style= "color:floralwhite; font: bold 40px Courier New, serif;">
-  <b> Welcome to U R Productivity</b></h1>
-<h1 id= "Header2" style= "color: floralwhite; font: bold 10px"><i>Personally Control Achievement</i></h2>
-
-</div>
+    <div id= "Title" style= background-color:rgb(224,146,109);>
+      <h1 id= "Header1" style= "color:floralwhite; font: bold 40px Courier New, serif;">
+        <b> Welcome to U R Productivity</b></h1>
+      <h1 id= "Header2" style= "color: floralwhite; font: bold 10px"><i>Personally Control Achievement</i></h2>
+    </div>
     <p id="timer"></p>
     <p> U R Productivity is a personalized notification system that you
-      can manage on this website. We offer a variety of personalities for
-       the notifications, geared to your motivational needs. 
-       <i>Personally control achievement.</i></p>
+          can manage on this website. We offer a variety of personalities for
+          the notifications, geared to your motivational needs. 
+    <i>Personally control achievement.</i></p>
 
     <mgt-msal-provider client-id="f568cc20-4b9c-4581-8c93-fad89fb94fce"></mgt-msal-provider>
     <mgt-login></mgt-login>
@@ -54,41 +53,30 @@ aside{background-color: rgb(231,188,124)}
     <div id="like_button_container"></div>
 
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-  <script src="Scripts/like_button.js"></script>
-  
-  <!--called every 30 minutes -->
-  <div id = "get-btn"></div>
-  
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="Scripts/like_button.js"></script>
+      
+    <!--called every 30 minutes -->
+    <div id = "get-btn"></div>
+      
 
-<section>
- 
-  <p>To begin using U R Productivity, please click the button below
-    to see if your browser supports notifications.</p>   
-
-  <button onclick = "notifyMe()">Click Me!</button>
-  <script src="Scripts/permissions.js"></script>
-  
-  <aside>To toggle your tasks on and off, click the checkbox below.</aside>
-  
-  <div id="TaskButton"></div>
-  Show Tasks (On/Off): <input type ="checkbox" id = "myCheck" onclick="ShowTasks()">
-  <mgt-tasks id = ToDo data-source="todo"></mgt-tasks> 
-
-  <script src = "Scripts/taskCheckbox.js"></script>  
-
-  <!-- <script>
-  window.setInterval(function(){
-    var date = new Date(); 
-    console.log(date.getMinutes());
-    if(date.getMinutes()/2 === 0){
-        console.log("hi"); 
-    }
-}, 60000);
-</script> -->
+    <section>
     
-  </body>
-  
+    <p>To begin using U R Productivity, please click the button below
+        to see if your browser supports notifications.</p>   
+
+    <button onclick = "notifyMe()">Click Me!</button>
+    <script src="Scripts/permissions.js"></script>
+      
+    <aside>To toggle your tasks on and off, click the checkbox below.</aside>
+      
+    <div id="TaskButton"></div>
+    Show Tasks (On/Off): <input type ="checkbox" id = "myCheck" onclick="ShowTasks()">
+    <mgt-tasks id = ToDo data-source="todo"></mgt-tasks> 
+
+    <script src = "Scripts/taskCheckbox.js"></script>  
+      
+  </body>  
 
   <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 </html>
