@@ -42,7 +42,7 @@ function checkDate(date) {
 }
 
 function createNotification(title) {
-    var notification = new Notification(title);
+    var notification = new Notification(getTaskMessage(title));
 }
 
 
