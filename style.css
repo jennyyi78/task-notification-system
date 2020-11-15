@@ -1,8 +1,8 @@
 
     .contain{
         height: 200vh;
-        width: 100%;
-        background-image:url(pics/plz.jpg);
+        width: 150%;
+        background-image:url(pics/plz.icloud.jpg);
         background-position: center;
         background-size: cover;
         padding-left: 5%;
