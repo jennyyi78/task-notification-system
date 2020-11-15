@@ -8,3 +8,7 @@ function silasSound(){
     snd.play();  
 }
 
+function rocksSound(){
+    var snd = new Audio("sounds/thisIsSparta.wav");
+    snd.play();  
+}
