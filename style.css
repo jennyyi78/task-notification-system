@@ -75,3 +75,15 @@ body {
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display: block;}
+
+  .notbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    top: 200px;
+    left:60px;
+
+    cursor: pointer;
+  }
