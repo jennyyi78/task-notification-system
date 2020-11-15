@@ -1,6 +1,7 @@
 body {
 
-    background-color: rgb(255, 236, 202);}
+    background-color: rgb(255, 236, 202);} -->
+  
     .contain{
         height: 200vh;
         width: 100%;
@@ -10,9 +11,9 @@ body {
         padding-left: 5%;
         padding-right:5%;
         box-sizing: border-box;
-        position: relative;
+        position: absolute; 
 
-}
+} 
 
 /* Dropdown Button */
 .dropbtn {
