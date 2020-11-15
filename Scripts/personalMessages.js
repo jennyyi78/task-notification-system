@@ -2,7 +2,9 @@ var personality = 'John';
 
 function changePersonality(name){
     personality = name;
+    
     alert("Personality is now " + name);
+    
 }
 
 function getPersonality(){
@@ -68,7 +70,7 @@ function getTaskMessage(taskName){
             randomIndex = Math.floor(Math.random() * scaryMsgs.length); 
             personalizedMsg = scaryMsgs[randomIndex].replace("#TASK", taskName);
         break;
-        case 'Rock':
+        case 'Brock':
             randomIndex = Math.floor(Math.random() * toughMsgs.length);
             personalizedMsg = toughMsgs[randomIndex].replace("#TASK", taskName);
         break;
