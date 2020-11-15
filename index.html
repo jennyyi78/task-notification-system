@@ -43,14 +43,22 @@
   .top-left{
     position: relative;
     top:270px;
-    left:20px
-  }
+    left:10px;
+    color: white;}
+    .top-left2{
+      position: relative;
+      top:0px;
+      left:650px;
+      font-size:60;
+    }
+  
+ 
 </style>
-<div class="top-left"> <bold>  U R Productivity is a personalized notification system that you
+<div class="top-left"><b>U R Productivity is a personalized notification system that you
     can manage on this website. 
     <br>We offer a variety of personalities for
       the notifications, geared to your motivational needs. <br>
-      <i>Personally control achievement.</i></bold>
+      <i>Personally control achievement.</i></b>
 </div>
       <script>loginSound();</script>
     
@@ -68,10 +76,10 @@
      
     <!--called every 30 minutes -->
     <div id = "get-btn"></div>  
-     
-    <p style="color:white";><i>To begin using U R Productivity, please click the button below
-        to see if your browser supports notifications.</i>
-    </p>   
+     <div class="top-left2"
+   style="color:white";style="text-size:30px";><i><b>To begin, please click the button below<br>
+        to see if your browser supports notifications.</i></b>
+   </div>  
 
     <div class="dropdown">
       <button onclick="dropDownButton()" class="dropbtn">Choose Personality</button>
@@ -83,7 +91,7 @@
       </div>
    <button onclick = "notifyMe()">Click Me!</button>
     
-    <p style="color:white";>To toggle your tasks on and off, click the checkbox below.</p>    
+    <p style="color:white";><b> To toggle your tasks on and off, click the checkbox below.</b></p>    
    
     Show Tasks (On/Off): <input type ="checkbox" id = "myCheck" onclick="ShowTasks()">
     <mgt-tasks id = ToDo data-source="todo"></mgt-tasks>     
