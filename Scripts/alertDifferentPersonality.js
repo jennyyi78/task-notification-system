@@ -2,6 +2,7 @@ var personality = 'John';
 
 function changePersonality(name){
     personality = name;
+    alert("personality is now " + name);
 }
 
 function getPersonality(){
