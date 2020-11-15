@@ -5,6 +5,7 @@ var dueDateTime;
 var title;
 const taskDates = [];
 const taskTitles = [];
+
 const sendHttpRequest = (method, url, data) => {
 
     return fetch(url, {
@@ -48,6 +49,7 @@ function createNotification(title) {
 
 
 const getData = () => {
+
     sendHttpRequest('GET', 'https://graph.microsoft.com/v1.0/me/todo/lists')
     .then(responseData => {
         //console.log(responseData);
@@ -73,7 +75,6 @@ const getData = () => {
     sendNotifications(taskDates, taskTitles);
     });
     });
-    
 };
 
 // I just wanted to add a clock feature because that's so cool

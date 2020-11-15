@@ -22,8 +22,7 @@ body {
 }
 #login {
   display:inline-block;
-  margin-right:20px;
-  left: 30px;
+  margin-right:10px;
   width:200px;
 }
 
@@ -45,8 +44,6 @@ body {
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
-    top:120px;
-    left: 700px;
     display: inline-block;
   }
   

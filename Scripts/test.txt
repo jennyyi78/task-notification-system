@@ -1,0 +1,1 @@
+https://cors-anywhere.herokuapp.com/https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=f568cc20-4b9c-4581-8c93-fad89fb94fce&response_type=code&redirect_uri=http://localhost:8000&response_mode=query&scope=offline_access%20user.read%20mail.read&state=12345
