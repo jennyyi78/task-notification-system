@@ -1,6 +1,9 @@
 const getBtn = document.getElementById('get-btn');
 var id;
 var dueDateTime;
+var title;
+const taskDates = [];
+const taskTitles = [];
 const sendHttpRequest = (method, url, data) => {
 
     return fetch(url, {
@@ -23,10 +26,15 @@ const getData = () => {
         sendHttpRequest('GET', request)
         .then(responseData => {
         console.log(responseData);
-        if (responseData.value[0].hasOwnProperty('dueDateTime')) {
-            dueDateTime = responseData.value[0].dueDateTime.dateTime;
-            console.log(dueDateTime);
+        var i;
+        for (i = 0; i < responseData.value.length; i++){
+        if (responseData.value[i].hasOwnProperty('dueDateTime')) {
+            dueDateTime = responseData.value[i].dueDateTime.dateTime;
+            title = responseData.value[i].title;
+            taskDates.push(dueDateTime);
+            taskTitles.push(title);
         }
+    }
     });
     });
     
