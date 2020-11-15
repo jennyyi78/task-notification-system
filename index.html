@@ -53,29 +53,13 @@ body {background-color: rgb(238, 224, 215);}
   <button onclick = "notifyMe()">Click Me!</button>
   <script src="Scripts/permissions.js"></script>
   
-  <p>To see your tasks, click the "Tasks" button below.</p>
+  <p>To toggle your tasks on and off, click the checkbox below.</p>
   
-  <button onclick= "ShowTasks()">Tasks</button>
-
   <div id="TaskButton"></div>
-  Checkbox: <input type ="checkbox" id = "myCheck" onclick="ShowTasks()">
-  <mgt-tasks id = ToDo data-source="todo"></mgt-tasks>
-  
+  Show Tasks (On/Off): <input type ="checkbox" id = "myCheck" onclick="ShowTasks()">
+  <mgt-tasks id = ToDo data-source="todo"></mgt-tasks> 
 
-  <script>
-    function ShowTasks() {
-      var checkBox = document.getElementById("myCheck");
-      var displaytodo = document.getElementById("ToDo");
-
-    
-      if (checkBox.checked == true) {
-        displaytodo.style.display = "block";
-      } else {
-        displaytodo.style.display = "none";
-      }
-    }
-    </script>
-    
+  <script src = "Scripts/taskCheckbox.js"></script>  
     
   </body>
   
